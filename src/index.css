@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+#approot {
+	transition: filter 0.5s;
+}
+
+.signup-screen {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 20vmax;
+	
+	border-color: #AD8688;
+	border-style: solid;
+	border-width: 15px;
+
+	border-bottom-style: none;
+
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+}
+
+.signup-screen .signup-content {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	padding-left: 40px;
+	padding-right: 40px;
+	justify-content: center;
+	position: relative;
+}
+
+.signup-screen .signup-content h3 {
+	font-size: 3rem;
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+}
+
+.signup-content form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.signup-content form input {
+	position: relative;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 10px;
+	color: rgb(212, 212, 212);
+	background-color: rgba(0,0,0,0);
+	outline: solid;
+	width: 100%;
+}
+.signup-content form input[type="submit"] {
+	cursor: pointer;
+	outline-color: #AD8688;
+	font-size: 2rem;
+	background-color: #AD8688;
+}
+
+.signin-screen {
+	position: absolute;
+	width: 450px;
+	z-index: 999999;
+	display: flex;
+	background: linear-gradient(130deg, rgb(208, 184, 168), rgb(141, 108, 93));
+	left: 50%;
+	transform: translate(-50%);
+	transition: opacity 0.5s;
+	margin-top: 20vh;
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+
+.signin-screen .signin-content {
+	position: relative;
+	width: 100%;
+	display: flex;
+/*	justify-content: center;
+	align-items: center;*/
+/*	flex-direction: column;*/
+	flex-direction: row;
+/*	gap: 40px;*/
+}
+.signin-screen .signin-content div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	gap: 40px;
+}
+.signin-screen .signin-content h3 {
+	font-size: 2em;
+	font-weight: bold;
+	color: rgb(212, 212, 212);
+}
+
+.signin-screen .signin-content form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.signin-screen .signin-content form input {
+	position: relative;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 10px;
+	color: rgb(212, 212, 212);
+	background-color: #CEB7A7;
+	width: 100%;
+}
+.signin-screen .signin-content form input::placeholder {
+	color: white;
+	font-weight: bold;
+	opacity: 1;
+}
+
+.signin-screen .signin-content form input[type="submit"] {
+	cursor: pointer;
+}
+	
+.signin-screen .signin-content form input[type="submit"]:hover {
+	outline: solid;
+	outline-color: beige;
+}
+
+
+.navbar {
+  font-family: "SF Pro AR Text";
+/*  font-family: "Poppins", sans-serif;*/
+  position: absolute;
+  background-color: rgba(0,0,0,0);
+  width: 100%;
+}
+
+.links {
+	z-index: 8;
+	font-size: 1.2rem;
+}
+
+.navimg {
+  padding-left: 2rem;
+  padding-right: 3rem;
+  transition: transform 0.3s ease-in-out;
+  aspect-ratio: 2/1;
+  width: 150px;
+}
+
+.navimg img {
+	width: 100%;
+	height: 100%;
+}
+
+.mx20 {
+  max-width: 20rem;
+}
+
+@font-face {
+	font-family: "SF Pro AR Text";
+	font-style: normal;
+	font-weight: 600;
+	src: url("assets/sfproAR_semibold.ttf");
+}
+
+@font-face {
+	font-family: "SF Pro AR Text Regular";
+	font-style: normal;
+	font-weight: 0;
+	src: url("assets/sfproAR_regular.ttf");
+}
+
+.borderwhite {
+  border-color: white;
+}
+
+.pb-15 {
+  padding-bottom: 1.5rem;
+}
+
+.gapfloat {
+  gap: 10rem;
+}
+.heroimg {
+  padding-top: 7rem;
+}
+
+.dropdown {
+  position: absolute;
+  gap: 1.5rem;
+  margin-top: 3.7rem;
+  flex-direction: column;
+  padding: 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #8E6D5C;
+}
+
+.dropdownlist {
+  margin: 1.3rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dropdownlist:hover {
+  text-decoration: none;
+}
+.border-b:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration-color: blanchedalmond;
+  text-underline-offset: 8px;
+}
+
+a:hover {
+	/*text-decoration: underline;
+	transition: text-decoration 1s; */
+}
+
+/* login css */
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+.cover {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    max-height: 25em;
+    z-index: 11;
+    background-color: floralwhite;
+    width: 70%;
+    height: 50%;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alt-login {
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alt-login div {
+    width: 47.5%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+    transition: outline-color 0.3s;
+    font-size: 0.75em;
+}
+
+input:focus {
+    outline: solid;
+    outline-color: rgb(32, 177, 255);
+}
+
+.login-btn {
+    width: 40%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: 0.5%;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+.blue {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../icons/google.png');
+}
+
+@media only screen and (min-device-width: 37em) {
+    .page {
+        font-size: 1em;
+    }
+
+    .cover {
+        width: 60%;
+        height: 70%;
+    }
+}
+
+@media only screen and (min-device-width: 64em) {
+    .page {
+        font-size: 1.25em;
+    }
+
+    .cover {
+        width: 25%;
+        height: 65%;
+    }
+}
+
+.hamburger-button {
+  display: none;
+  z-index: 12;
+  top: 5%;
+  width: 2rem;
+  margin: 1.5rem;
+  height: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-button:focus {
+  outline: none;
+}
+
+.hamburger-button div {
+  width: 2rem;
+  height: 0.15rem;
+  background: floralwhite;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.hamburger-button div:first-child {
+  transform: rotate(0);
+}
+
+.hamburger-button div:nth-child(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hamburger-button div:nth-child(3) {
+  transform: rotate(0);
+}
+
+.hamburger-links {
+  color: white;
+  align-items: center;
+  display: flex;
+}
+
+.hamburger-nav {
+  transition: transform 0.5s ease-out;
+/*  font-family: "SF Pro AR Text";*/
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  z-index: 9;
+  flex-direction: column;
+  background: #373737;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+}
+.hamburger-nav ul {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+@media (max-width: 904px) {
+	.hamburger-button {
+	  display: flex;
+	}
+	.links {
+	  display: none;
+	}
+	.heroimg {
+	  padding-top: unset;
+	}
+	.signup-screen {
+		border-width: 5px;
+	}
+	
+}
+
